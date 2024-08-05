@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #bbc6fa;
+}
+
+.quotebox{
+    background: #fff;
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px 0px rgba(0,0,0,0.15);
+}
+
+#quoteOfTheDay h2{
+font-size: 32px;
+margin-bottom: 40px;
+position: relative;
+}
+
+#quoteOfTheDay h2::after{
+content: '';
+width: 75px;
+height: 3px;
+border-radius: 3px;
+background: rgb(23,124,229);
+position: absolute;
+bottom: -10px;
+left: 50%;
+transform: translateX(-50%);
+}
+
+
+#dailyQuote{
+    font-size: 26px;
+    min-height: 110px;
+}
+
+#dailyQuote::before, #dailyQuote::after{
+counter-reset: '""';
+
+}
+#quoteAuthor{
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+#quoteAuthor::before{
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: rgb(23,124,229);
+    position: absolute;
+    top: 50%;
+    left: -30%;
+}
+
+
+.quotebox button{
+    background: rgb(23,124,229);
+    color: #fff;
+    border-radius: 25px;
+    border: 1px solid rgb(23,124,229);
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.quotebox input{
+    background: rgb(219, 224, 230);
+    color: #000000;
+    border-radius: 20px;
+    border: 1px solid black;
+    width: 200px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor:pointer;
+}
