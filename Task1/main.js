@@ -1,6 +1,6 @@
- // Function to fetch and display Quote of the Day
-       
- async function fetchQuoteOfTheDay() {
+// Function to fetch and display Quote of the Day
+
+async function fetchQuoteOfTheDay() {
     try {
         const response = await fetch('https://api.quotable.io/random');
         if (!response.ok) {
@@ -23,7 +23,7 @@ async function searchQuotes() {
         document.getElementById('results').innerHTML = '<p>Please enter an author name.</p>';
         return;
     }
-    
+
     try {
         const response = await fetch(`https://api.quotable.io/quotes?author=${encodeURIComponent(authorName)}`);
         if (!response.ok) {
