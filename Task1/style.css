@@ -83,7 +83,7 @@ counter-reset: '""';
 .quotebox input{
     background: rgb(219, 224, 230);
     color: #000000;
-    border-radius: 20px;
+    border-radius: 9px;
     border: 1px solid black;
     width: 200px;
     height: 25px;
@@ -91,5 +91,5 @@ counter-reset: '""';
     align-items: center;
     justify-content: center;
     margin: 5px;
-    cursor:pointer;
+    cursor:text;
 }
